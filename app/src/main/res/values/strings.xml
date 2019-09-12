@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lite Up</string>
+    <string name="addFoodName">Enter Food Name</string>
+    <string name="addFoodPrice">Enter Food Price</string>
+    <string name="ChooseImage">Choose Image</string>
+    <string name="BtnAddFood">Add Food</string>
+    <string name="btnFoodList">Food List</string>
+
+</resources>
