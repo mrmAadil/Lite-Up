@@ -52,7 +52,7 @@ public class FoodListActivity extends AppCompatActivity {
         list.clear();
         while(cursor.moveToNext()){
             int id = cursor.getInt(0);
-            String name = cursor.getString(1);
+            String name =  cursor.getString(1);
             String price = cursor.getString(2);
             byte[] image = cursor.getBlob(3);
 

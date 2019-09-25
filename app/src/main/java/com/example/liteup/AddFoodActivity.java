@@ -42,6 +42,7 @@ public class AddFoodActivity extends AppCompatActivity {
         init();
 
         sqLiteHelper = new FoodDBHelper(this,"LiteUP.db",null,1);
+        //sqLiteHelper.queryData("DROP TABLE FOODS");
         sqLiteHelper.queryData("CREATE TABLE IF NOT EXISTS FOODS (id INTEGER PRIMARY KEY AUTOINCREMENT,name VARCHAR,price VARCHAR,image BLOG) ");
 
         btnChoose.setOnClickListener(new View.OnClickListener(){
@@ -68,22 +69,36 @@ public class AddFoodActivity extends AppCompatActivity {
         btnAddFood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try{
-                    sqLiteHelper.insertFood(
-                            editName.getText().toString().trim(),
-                            editPrice.getText().toString().trim(),
-                            imageViewToByte(imageView)
-                    );
 
-                    Toast.makeText(getApplicationContext(),"Food Added !",Toast.LENGTH_SHORT).show();
-                    editName.setText("");
-                    editPrice.setText("");
-                    imageView.setImageResource(R.mipmap.ic_launcher);
-                }catch(Exception e) {
-                    e.printStackTrace();
+                String FoodName = editName.getText().toString();
+                String FoodPrice =  editPrice.getText().toString();
+
+                if(FoodName.isEmpty()){
+                    editName.setError("This field cannot be empty");
+                }
+                else if(FoodPrice.isEmpty()){
+                    editPrice.setError("This field cannot be empty");
+                }
+                else {
+                    try {
+                        sqLiteHelper.insertFood(
+                                editName.getText().toString().trim(),
+                                editPrice.getText().toString().trim(),
+                                imageViewToByte(imageView)
+                        );
+
+                        Toast.makeText(getApplicationContext(), "Food Added !", Toast.LENGTH_SHORT).show();
+                        editName.setText("");
+                        editPrice.setText("");
+                        imageView.setImageResource(R.mipmap.ic_launcher);
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         });
+
 
         btnFoodList.setOnClickListener(new View.OnClickListener() {
             @Override

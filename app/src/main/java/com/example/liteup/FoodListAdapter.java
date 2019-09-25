@@ -67,7 +67,7 @@ public class FoodListAdapter extends BaseAdapter {
         Food food = foodList.get(position);
 
         holder.textName.setText(food.getName());
-        holder.textPrice.setText(food.getPrice());
+        holder.textPrice.setText("Rs "+food.getPrice());
 
         byte[] foodImage = food.getImage();
         Bitmap bitmap = BitmapFactory.decodeByteArray(foodImage, 0,foodImage.length);
