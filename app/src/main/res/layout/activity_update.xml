@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/updateData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etUserId"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="   User ID : "
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="   Full Name :"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="   User Name :"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="   Email :"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Update" />
+</LinearLayout>
