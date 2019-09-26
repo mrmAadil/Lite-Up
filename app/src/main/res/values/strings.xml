@@ -15,5 +15,19 @@
     <string name="cancel">Cancel</string>
     <string name="welcome">Welcome</string>
     <string name="view_profile">View Profile</string>
+    <string name="empty_list_text">List is Empty</string>
+    <string name="enter_title">Enter Name</string>
+    <string name="enter_desc">Enter Email</string>
+    <string name="add_record">ADD RESTAURANT</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="btn_update">UPDATE</string>
+    <string name="enter_rastaurant">enter_rastaurant</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_phone">Enter Phone Number</string>
+    <string name="update_phone">Enter Phone Number</string>
+    <string name="update_name">Enter Name</string>
+    <string name="update_email">Enter Email</string>
+    <string name="update_address">Enter Address</string>
 
 </resources>
