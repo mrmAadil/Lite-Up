@@ -10,4 +10,9 @@
     <color name="lightgreen">#34eb89</color>
     <color name="red">#d42a2a</color>
     <color name="white">#f2eceb</color>
+    <color name="back">#CCFFFFFF</color>
+    <color name="button">#CCD52919</color>
+    <color name="button1">#CC308F33</color>
+    <color name="backlist">#CCFFFFFF</color>
+
 </resources>
