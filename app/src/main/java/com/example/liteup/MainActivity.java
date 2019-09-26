@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent1);
                 } else {
                     counter--;
-
+                    Toast.makeText(MainActivity.this, "Invalid logIn details", Toast.LENGTH_LONG).show();
                     tvInfo.setText("No of attempts remaining: " + String.valueOf(counter));
 
                     if(counter == 0){
