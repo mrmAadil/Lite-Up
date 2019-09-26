@@ -5,5 +5,15 @@
     <string name="ChooseImage">Choose Image</string>
     <string name="BtnAddFood">Add Food</string>
     <string name="btnFoodList">Food List</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">Login</string>
+    <string name="signup">Signup</string>
+    <string name="fullname">Fullname</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="welcome">Welcome</string>
+    <string name="view_profile">View Profile</string>
 
 </resources>
