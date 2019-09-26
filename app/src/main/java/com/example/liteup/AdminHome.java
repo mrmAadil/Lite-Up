@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AdminHome extends AppCompatActivity {
 
-    ImageButton btnAddRes, btnViewRes, viewProfile;
+    ImageButton btnAddRes, btnAddFood, viewProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class AdminHome extends AppCompatActivity {
         setContentView(R.layout.activity_admin_home);
 
         btnAddRes  = findViewById(R.id.imgBtnAddRes);
-        btnViewRes = findViewById(R.id.imgbtnViewRes);
+        btnAddFood = findViewById(R.id.imgbtnViewRes);
 
     }
 
@@ -25,10 +25,21 @@ public class AdminHome extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        btnViewRes.setOnClickListener(new View.OnClickListener() {
+        btnAddRes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(AdminHome.this, ViewRestaurant.class);
+                Intent intent1 = new Intent(AdminHome.this, RestaurentListActivity.class);
+                startActivity(intent1);
+            }
+
+            // Add Restaurant intent
+
+        });
+
+        btnAddFood.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(AdminHome.this, AddFoodActivity.class);
                 startActivity(intent1);
             }
 

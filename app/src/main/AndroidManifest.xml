@@ -11,19 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".FoodListActivity"
+        <activity android:name=".UserFoodActivity"></activity>
+        <activity android:name=".UserRestuarantActivity" />
+        <activity
+            android:name=".FoodListActivity"
             android:label="Food List"
-            android:parentActivityName=".AddFoodActivity" ></activity>
-
-        <activity android:name=".AddFoodActivity"/>
-
-        <activity android:name=".ProfileActivity"></activity>
+            android:parentActivityName=".AddFoodActivity" />
+        <activity android:name=".AddFoodActivity" />
+        <activity android:name=".ProfileActivity" />
         <activity android:name=".AdminHome" />
         <activity android:name=".UpdateUser" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".AdminLogIn" />
-        <activity android:name=".SecondActivity"/>
+        <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,13 +31,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-        <activity android:name=".ModifyRestaurantActivity"></activity>
+        <activity android:name=".ModifyRestaurantActivity" />
         <activity android:name=".AddRestaurantActivity" />
-        <activity android:name=".RestaurentListActivity"/>
-
-
+        <activity android:name=".RestaurentListActivity" />
     </application>
 
 </manifest>

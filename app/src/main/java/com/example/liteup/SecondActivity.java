@@ -25,6 +25,18 @@ public class SecondActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+
+        btnOrderFoods.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(SecondActivity.this, UserRestuarantActivity.class);
+                startActivity(intent1);
+            }
+
+            // Add Restaurant intent
+
+        });
+
        /* btnOrderFoods.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
